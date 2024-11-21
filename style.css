@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+
+    --blue-color:#4A8DA8;
+    --dark-gray:#222222;
+    --black:#000000;
+    --dark-white:#F5F5F5;
+    --light-gray:#999999;
+    --pure-white:#FFFFFF;
+    --distract-color:#EFA152;
+    --poppins:"Poppins", sans-serif;
+    --montserrat:"Montserrat", sans-serif;
+    --prosto:"Prosto One", serif;
+}
+
+.header{
+    height: 50px;
+    width: 100vw;
+    align-content: center;
+    justify-items: center;  
+}
+
+
+
+.navlist{
+    list-style-type: none;
+    align-items: center;
+}
+
+.navlist .list a {
+    font-family: var(--prosto);
+    text-decoration: none;
+    color: var(--light-gray);
+    margin: 40px;
+    
+}
+
+.navlist .list a:hover {
+    color: var(--black);
+    transition: 0.3s ease;
+}
+.homepanel{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    background-color:var(--pure-white);
+    display: flex;
+}
+.nameholder{
+margin-bottom: 20px;
+
+}
+.nameholder h1{   
+font-family: var(--prosto);
+line-height: 100px;
+font-size: 100px;
+color: var(--black);
+padding: 0;
+letter-spacing: 2px;
+   
+
+}
+.nameholder h2{
+    display: flex;
+    font-family: var(--montserrat);
+    color:var(--dark-gray);
+    font-size: 28px;
+    margin-left: 5px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    text-shadow: 0px 0px 1px var(--dark-gray);
+  
+}
+.nameholder h3{
+    font-family: var(--prosto);
+    color: var(--light-gray);
+    text-align: right;
+    letter-spacing: 2px;
+    text-shadow: 0px 0px 4px var(--dark-white);
+    font-size: 21px;
+    
+}
+.nameholder .shape{
+    
+    width: 870px;
+    height: 60px;
+    background-color: var(--blue-color);
+    margin-top: 10px;
+    margin-left: 5px;
+    border-radius: 0px 0px 28px 28px;
+    text-align: center;
+    align-content: center;
+    box-shadow: 0px 0px 4px var(--light-gray);
+}
+
+.shape h4{
+    color: var(--pure-white);
+    font-family: var(--prosto);
+    font-size: 24px;
+    letter-spacing: 10px;
+    
+}
+
+.homepage  {
+ background-color:var(--pure-white);
+   height: 100vh;
+   width: 100vw;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+}
+.scrolldown{
+    display: flex;
+    justify-content: center;
+}
+.arrowholder {
+   
+    width:150px;
+    text-align: center;
+    
+}
+.scrolldown i{
+   font-size: 30px;
+}
+
+.scrolldown h5{
+    font-family: var(--montserrat);
+    font-weight: 600;
+    font-size: 14px;
+    color:var(--light-gray)
+}
+
+/*About page*/
+
+.aboutpage{
+    height: 200vh;
+    width: 100vw;  
+}
+.aboutpanel{
+    justify-content: center;
+    display: flex;
+}
+.about{
+    height: 60vh;
+    width: 70vw;
+    display: flex;
+    justify-content: end;
+}
+
+.backpanel{
+    position: absolute;
+    top: 70.5rem;
+    height: 506px;
+    width:85vw ;
+    left: 164px;
+    border:5px solid var(--dark-gray);
+    background-color:var(--pure-white);
+    border-radius: 28px;
+}
+.imageholder{
+    z-index: 1;
+    height: 520px;
+    width: 550px;
+}
+.imageholder img{
+    height: 622px; ;
+}
+
+.textpanel {
+    margin-left: 10rem;
+    margin-top: 50px;
+}
+.backpanel h1{
+    font-size: 70px;
+    font-family: var(--prosto);
+    padding-top: 2rem;
+    color: var(--dark-gray);
+}
+
+.backpanel h2{
+    margin-top: 10px;
+    font-size: 21px;
+    font-family: var(--poppins);
+    font-weight: 500;
+}
+
+.backpanel h2 span{
+    font-family: var(--prosto);
+    color: var(--blue-color);
+}
+
+.backpanel p{
+    margin-top: 10px;
+    color: var(--light-gray);
+    font-family: var(--poppins);
+    font-size: 18px;
+    width: 37rem;
+    line-height: 25px;
+}
+.backpanel .buttonholder{
+    height: 66px;
+    width: 50rem;
+   margin-top: 40px;
+
+
+}
+.buttonholder .button{
+    
+    display: flex;
+    align-items: center;
+    height: 60px;
+    width: 200px;
+    background-color: var(--black);
+    margin-top: 1rem;
+    margin-left: 10rem;
+   justify-content: center;
+   border-radius: 50px;
+   
+}
+
+.button a{
+    color: var(--pure-white);
+    text-decoration: none;
+    font-family: var(--poppins);
+   
+}
