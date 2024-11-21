@@ -133,7 +133,7 @@ letter-spacing: 2px;
     font-family: var(--montserrat);
     font-weight: 600;
     font-size: 14px;
-    color:var(--light-gray)
+    color:var(--blue-color)
 }
 
 /*About page*/
@@ -145,12 +145,15 @@ letter-spacing: 2px;
 .aboutpanel{
     justify-content: center;
     display: flex;
+    height: 70vh;
+  
 }
 .about{
     height: 60vh;
     width: 70vw;
     display: flex;
     justify-content: end;
+ 
 }
 
 .backpanel{
@@ -199,34 +202,110 @@ letter-spacing: 2px;
     margin-top: 10px;
     color: var(--light-gray);
     font-family: var(--poppins);
-    font-size: 18px;
-    width: 37rem;
+    font-size: 16px;
+    width: 36rem;
     line-height: 25px;
+    letter-spacing: 0.8px;
 }
 .backpanel .buttonholder{
     height: 66px;
-    width: 50rem;
+    width: 12rem;
    margin-top: 40px;
+   margin-left: 10rem;
+
 
 
 }
-.buttonholder .button{
-    
-    display: flex;
-    align-items: center;
-    height: 60px;
-    width: 200px;
+
+
+.buttonholder a{
     background-color: var(--black);
-    margin-top: 1rem;
-    margin-left: 10rem;
-   justify-content: center;
-   border-radius: 50px;
-   
-}
-
-.button a{
+    padding: 20px;
     color: var(--pure-white);
     text-decoration: none;
     font-family: var(--poppins);
+    border-radius: 50px;
+    border: 2px solid transparent; 
+    transition:  0.3s ease-in-out;
+}
+
+.buttonholder a:hover{
+    color:var(--black);
+    background-color: var(--pure-white);
+    border: 2px solid var(--black);
+}
+
+/*Personal info and Education panel*/
+
+.infoandedu{
+    height: 70vh;
+    width: 100vw;
+    margin-top: 10rem;
+    display: flex;
+}
+
+.personalinfopanel{
+    margin-left: 10.5rem;
+    width: 30vw;
+    background-color:var(--pure-white);
+    border-radius: 28px;
+    border: 5px solid var(--black);
+}
+
+.personalinfopanel h1{
+    padding-top: 2rem;
+    font-family: var(--prosto);
+    font-size: 25px;
+    text-align: center;
+}
+.personalinfopanel h2{
+    font-family: var(--poppins);
+    font-weight: 500;
+    font-size: 20px;
+    margin-top:5rem;
+    margin-left: 4rem;
+    color: var(--blue-color);
+}
+
+.personalinfopanel h2 span{
+    padding-left: 1rem;
+    font-weight: 500;
+    color: var(--blue-color);
+    letter-spacing: 1px;
+}
+
+.educationpanel{
+    
+    margin-left: 5rem;
+    background-color:var(--blue-color);
+    width:52vw;
+    border-radius: 28px;
+    
+}
+
+.educationpanel h1{
+    padding-top: 2rem;
+    margin-left: 4rem;
+    font-family: var(--prosto);
+    font-size: 25px;
+    color: var(--pure-white);
+}
+
+.socialacc {
+
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.socialacc ul a{
+    font-size: 35px;
+    margin: 2rem;
+    color: var(--black);
+    transition: 0.3s ease;
+}
+
+.socialacc ul a:hover{
+    color:var(--blue-color);
    
 }
