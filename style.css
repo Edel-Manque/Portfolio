@@ -10,6 +10,7 @@
     --dark-gray:#222222;
     --black:#000000;
     --dark-white:#F5F5F5;
+    --light-black:#3f4b55;
     --light-gray:#999999;
     --pure-white:#FFFFFF;
     --distract-color:#EFA152;
@@ -35,6 +36,7 @@
 .navlist .list a {
     font-family: var(--prosto);
     text-decoration: none;
+    font-size: 14px;
     color: var(--light-gray);
     margin: 40px;
     
@@ -109,7 +111,7 @@ letter-spacing: 2px;
 
 .homepage  {
  background-color:var(--pure-white);
-   height: 100vh;
+   height: 105vh;
    width: 100vw;
    justify-content: center;
    align-items: center;
@@ -118,15 +120,16 @@ letter-spacing: 2px;
 .scrolldown{
     display: flex;
     justify-content: center;
+    height: 120px;
 }
 .arrowholder {
-   
+ 
     width:150px;
     text-align: center;
     
 }
 .scrolldown i{
-   font-size: 30px;
+   font-size: 20px;
 }
 
 .scrolldown h5{
@@ -141,171 +144,240 @@ letter-spacing: 2px;
 .aboutpage{
     height: 200vh;
     width: 100vw;  
-}
-.aboutpanel{
-    justify-content: center;
-    display: flex;
-    height: 70vh;
-  
-}
-.about{
-    height: 60vh;
-    width: 70vw;
-    display: flex;
-    justify-content: end;
  
 }
-
-.backpanel{
-    position: absolute;
-    top: 70.5rem;
-    height: 506px;
-    width:85vw ;
-    left: 164px;
-    border:5px solid var(--dark-gray);
-    background-color:var(--pure-white);
-    border-radius: 28px;
-}
-.imageholder{
-    z-index: 1;
-    height: 520px;
-    width: 550px;
-}
-.imageholder img{
-    height: 622px; ;
+.aboutpanel{
+    display: flex;
+    justify-content: center;
+    height: 55vh;
+  
 }
 
-.textpanel {
-    margin-left: 10rem;
-    margin-top: 50px;
-}
-.backpanel h1{
-    font-size: 70px;
-    font-family: var(--prosto);
-    padding-top: 2rem;
-    color: var(--dark-gray);
+.imagepanel{
+    display: flex;
+    justify-content: center;
+    height: 500px;
+    width: 70vw;
 }
 
-.backpanel h2{
+.textpanel{
+    width: 40rem;
+    padding-top: 5rem;
+}
+
+.textpanel h1{
+    font-family: var(--prosto) ;
+    font-size: 60px;
+}
+
+.textpanel h2{
+    font-style: 25px;
+    font-family: var(--montserrat);
+    
+}
+
+.textpanel p{
     margin-top: 10px;
-    font-size: 21px;
+    letter-spacing: 0.5px;
+    font-size: 18px;
     font-family: var(--poppins);
-    font-weight: 500;
+}
+.imgholder{
+    flex: 1;
+    background-color: var(--pure-white);
+    border-radius: 28px;
+    padding-left: 5rem;
+    justify-content: center;
+    padding-right: 30px;
+    display: flex;
+    box-shadow: 0px 2px 6px  var(--light-gray);
+   
+    img{
+        margin-top: -120px;
+    }   
+
 }
 
-.backpanel h2 span{
-    font-family: var(--prosto);
+.button{
+    color: var(--pure-white);
+    background-color: var(--black);
+    width: 180px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--montserrat);
+    font-weight: 600;
+    font-size: 14px;
+    border-radius: 30px;
+    margin-top: 30px;
+    border: 1.5px solid transparent;
+    
+}
+
+.textpanel h2 span{
     color: var(--blue-color);
 }
 
-.backpanel p{
-    margin-top: 10px;
-    color: var(--light-gray);
-    font-family: var(--poppins);
-    font-size: 16px;
-    width: 36rem;
-    line-height: 25px;
-    letter-spacing: 0.8px;
-}
-.backpanel .buttonholder{
-    height: 66px;
-    width: 12rem;
-   margin-top: 40px;
-   margin-left: 10rem;
-
-
-
+.button i{
+    margin-right: 5px;
 }
 
-
-.buttonholder a{
-    background-color: var(--black);
-    padding: 20px;
-    color: var(--pure-white);
-    text-decoration: none;
-    font-family: var(--poppins);
-    border-radius: 50px;
-    border: 2px solid transparent; 
-    transition:  0.3s ease-in-out;
-}
-
-.buttonholder a:hover{
-    color:var(--black);
+.button:hover{
     background-color: var(--pure-white);
-    border: 2px solid var(--black);
+    color: var(--black);
+    border: 1.5px solid var(--black);
+   transition: 0.3s ease;
+
 }
+
+
+
+
 
 /*Personal info and Education panel*/
 
-.infoandedu{
-    height: 70vh;
+
+
+
+/*Information panel*/
+.infopage{
+    height: 40vh;
     width: 100vw;
-    margin-top: 10rem;
+    display: flex;
+    justify-content: center;
+
+}
+
+.infopanel{
+   
+    height: 34vh; 
+    width: 70vw;
     display: flex;
 }
 
-.personalinfopanel{
-    margin-left: 10.5rem;
-    width: 30vw;
+.infopanel .personal{
+    width: 23vw;
+    height: 34vh;
     background-color:var(--pure-white);
+    margin-right: 20px;
+    box-shadow: 0px 1px 3px var(--light-gray);
     border-radius: 28px;
-    border: 5px solid var(--black);
 }
 
-.personalinfopanel h1{
-    padding-top: 2rem;
-    font-family: var(--prosto);
-    font-size: 25px;
-    text-align: center;
+.infopanel .education{
+    width: 48vw;
+    height: 34vh;
+    background-image: linear-gradient(to right,#4A8DA8,var(--pure-white));
+    border-radius: 28px;
+    box-shadow: 0px 1px 3px var(--light-gray);
 }
-.personalinfopanel h2{
-    font-family: var(--poppins);
-    font-weight: 500;
+
+.personal h1{
+    margin-top: 15px;
+    font-family: var(--prosto);
     font-size: 20px;
-    margin-top:5rem;
-    margin-left: 4rem;
+    text-align: center;
     color: var(--blue-color);
 }
-
-.personalinfopanel h2 span{
-    padding-left: 1rem;
-    font-weight: 500;
-    color: var(--blue-color);
-    letter-spacing: 1px;
-}
-
-.educationpanel{
-    
-    margin-left: 5rem;
-    background-color:var(--blue-color);
-    width:52vw;
-    border-radius: 28px;
-    
-}
-
-.educationpanel h1{
-    padding-top: 2rem;
-    margin-left: 4rem;
-    font-family: var(--prosto);
-    font-size: 25px;
-    color: var(--pure-white);
-}
-
-.socialacc {
-
-    height: 140px;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-}
-.socialacc ul a{
-    font-size: 35px;
-    margin: 2rem;
-    color: var(--black);
-    transition: 0.3s ease;
-}
-
-.socialacc ul a:hover{
-    color:var(--blue-color);
+.personal h2{
+   margin-left: 40px;
+   margin-top: 20px;
+   color:var(--light-gray);
+   font-size: 16px;
    
 }
+.personal h2 span{
+    font-family: var(--poppins);
+    color: var(--light-black);
+    font-size: 15px;
+    font-weight: 400;
+    margin-left: 15px;
+}
+
+.personal .socialicons{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.socialicons ul li{
+    margin-top: 70px;
+text-align: center;
+list-style-type: none;
+
+
+}
+
+.socialicons ul a i {
+    color: var(--blue-color);
+margin:20px;
+font-size: 28px;
+
+}
+
+.education .title{
+ height: 40px;
+display: flex;
+align-items: center;
+margin-left: 5.2rem;
+font-family: var(--prosto);
+font-size: 20px;
+margin-top: 10px;
+color: var(--pure-white);
+
+
+    
+}
+.education .panel{
+    display: flex;
+    height: 25vh;
+    width: 48vw;
+    
+}
+.education .leftpanel{
+ 
+    height: 25vh;
+    width: 200px;
+    margin-left: 50px;
+    margin-top: 12px;
+}
+
+.education .rightpanel{
+   
+    height:25vh ;
+    width: 600px;
+    margin-top: 10px;
+}
+
+.panel .leftpanel h2 {
+    font-family: var(--montserrat);
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    color: var(--pure-white);
+    text-align: center;
+   
+}
+
+.panel .rightpanel h2{
+    color: var(--w);
+    font-weight: 300;
+    font-size: 16px;
+    font-family: var(--prosto);
+
+}
+.panel .rightpanel h3{
+    color: var(--light-black);
+    font-size: 12px;
+    margin-bottom: 20px;
+    margin-left: 12px;
+    font-family: var(--poppins);
+    font-weight: 400;
+
+}
+
+
+
