@@ -5,15 +5,14 @@
 }
 
 :root{
-
-    --blue-color:#4A8DA8;
+    --blue-color:#70aec7;
     --dark-gray:#222222;
     --black:#000000;
     --dark-white:#F5F5F5;
     --light-black:#3f4b55;
     --light-gray:#999999;
     --pure-white:#FFFFFF;
-    --distract-color:#EFA152;
+    --distract-color:#EB6534;
     --poppins:"Poppins", sans-serif;
     --montserrat:"Montserrat", sans-serif;
     --prosto:"Prosto One", serif;
@@ -58,10 +57,10 @@
 margin-bottom: 20px;
 
 }
-.nameholder h1{   
+.nameholder .name {   
 font-family: var(--prosto);
 line-height: 100px;
-font-size: 100px;
+font-size: 120px;
 color: var(--black);
 padding: 0;
 letter-spacing: 2px;
@@ -71,12 +70,13 @@ letter-spacing: 2px;
 .nameholder h2{
     display: flex;
     font-family: var(--montserrat);
-    color:var(--dark-gray);
+    color:var(--light-gray);
     font-size: 28px;
-    margin-left: 5px;
+    margin-left: 8px;
+
     letter-spacing: 2px;
     font-weight: 700;
-    text-shadow: 0px 0px 1px var(--dark-gray);
+    
   
 }
 .nameholder h3{
@@ -90,7 +90,7 @@ letter-spacing: 2px;
 }
 .nameholder .shape{
     
-    width: 870px;
+    width: 64.5rem;
     height: 60px;
     background-color: var(--blue-color);
     margin-top: 10px;
@@ -142,8 +142,9 @@ letter-spacing: 2px;
 /*About page*/
 
 .aboutpage{
-    height: 200vh;
+    height: 175vh;
     width: 100vw;  
+   
  
 }
 .aboutpanel{
@@ -168,21 +169,26 @@ letter-spacing: 2px;
 .textpanel h1{
     font-family: var(--prosto) ;
     font-size: 60px;
+    color: var(--black);
 }
 
 .textpanel h2{
+    color: var(--blue-color);
     font-style: 25px;
+    font-weight: 400;
     font-family: var(--montserrat);
     
 }
 
 .textpanel p{
     margin-top: 10px;
-    letter-spacing: 0.5px;
-    font-size: 18px;
+    letter-spacing: 1px;
+    font-size: 16px;
     font-family: var(--poppins);
+    color: var(--light-gray);
 }
 .imgholder{
+    margin-top: 30px;
     flex: 1;
     background-color: var(--pure-white);
     border-radius: 28px;
@@ -198,38 +204,49 @@ letter-spacing: 2px;
 
 }
 
-.button{
-    color: var(--pure-white);
-    background-color: var(--black);
-    width: 180px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: var(--montserrat);
-    font-weight: 600;
-    font-size: 14px;
-    border-radius: 30px;
-    margin-top: 30px;
-    border: 1.5px solid transparent;
+.button{  
+   
+    width:13rem;
+    margin-top: 4rem; 
     
+    
+    
+}
+
+.button a{
+    font-size: 16px;
+    letter-spacing: 3px;
+    text-decoration: none;
+    background-color:var(--black);
+    font-family: var(--poppins);
+    font-weight: 600;
+    padding: 14px;
+    border: 2px solid var(--light-black);
+    border-radius: 28px;
+    color: var(--dark-white);
+    
+}
+
+.button a:hover{
+    background-color:var(--pure-white);
+    color: var(--black);
+    border: 2px solid var(--black);
+    box-shadow: 0px 1px 15px 0px var(--dark-white);
+    transition: 0.3s ease;
 }
 
 .textpanel h2 span{
     color: var(--blue-color);
+    font-weight: 500;
 }
 
 .button i{
-    margin-right: 5px;
+    font-size: 15px;
+    margin-right: 3px;
+    
 }
 
-.button:hover{
-    background-color: var(--pure-white);
-    color: var(--black);
-    border: 1.5px solid var(--black);
-   transition: 0.3s ease;
 
-}
 
 
 
@@ -242,11 +259,11 @@ letter-spacing: 2px;
 
 /*Information panel*/
 .infopage{
-    height: 40vh;
+    height: 35vh;
     width: 100vw;
     display: flex;
     justify-content: center;
-
+   
 }
 
 .infopanel{
@@ -254,20 +271,20 @@ letter-spacing: 2px;
     height: 34vh; 
     width: 70vw;
     display: flex;
+    
 }
 
 .infopanel .personal{
-    width: 23vw;
-    height: 34vh;
+    width: 20vw;
+    height: 20rem;
     background-color:var(--pure-white);
-    margin-right: 20px;
     box-shadow: 0px 1px 3px var(--light-gray);
     border-radius: 28px;
 }
 
 .infopanel .education{
-    width: 48vw;
-    height: 34vh;
+    width: 60rem;
+    height: 20rem;
     background-image: linear-gradient(to right,#4A8DA8,var(--pure-white));
     border-radius: 28px;
     box-shadow: 0px 1px 3px var(--light-gray);
@@ -277,6 +294,7 @@ letter-spacing: 2px;
     margin-top: 15px;
     font-family: var(--prosto);
     font-size: 20px;
+    font-weight: 400;
     text-align: center;
     color: var(--blue-color);
 }
@@ -312,13 +330,22 @@ list-style-type: none;
 }
 
 .socialicons ul a i {
-    color: var(--blue-color);
-margin:20px;
+    color: var(--light-black);
+margin:10px;
 font-size: 28px;
+padding: 10px;
+border-radius: 15px;
+
+}
+.socialicons ul a i:hover {
+color: var(--dark-white);
+transition: 0.5s ease-in-out;
+border-radius: 30px;
+background-color: var(--black);
 
 }
 
-.education .title{
+.education .title h1{
  height: 40px;
 display: flex;
 align-items: center;
@@ -328,13 +355,17 @@ font-size: 20px;
 margin-top: 10px;
 color: var(--pure-white);
 
-
-    
 }
+    
+.infopanel .education{
+    width: 50vw;
+}
+
 .education .panel{
     display: flex;
     height: 25vh;
-    width: 48vw;
+    width: 45vw;
+   
     
 }
 .education .leftpanel{
@@ -363,7 +394,7 @@ color: var(--pure-white);
 }
 
 .panel .rightpanel h2{
-    color: var(--w);
+    color: var(--light-black);
     font-weight: 300;
     font-size: 16px;
     font-family: var(--prosto);
@@ -378,6 +409,427 @@ color: var(--pure-white);
     font-weight: 400;
 
 }
+.lineholder {
+    height: 20px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.line{
+    height: 5px;
+    width: 70vw;
+    background-color: var(--dark-white);
+    border-radius: 10px;
+}
+/*CertPanel*/
+.Certificationpage{
+    height: 30rem;
+    width: 100vw;
+
+   
+}
+.certpanel{
+    height: 20rem;
+
+   
+}
+.certtitle{
+    margin-top: 20px;
+    height: 60px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.certtitle h1{
+    font-family: var(--prosto);
+    font-size: 20px;
+    font-weight: 500;
+   
+    color: var(--black);
+}
+.certholderpanelparent{
+    width: 100vw;
+    height: 40rem;
+    display: flex;
+    justify-content: center;
+}
+.certholderpanel{
+    width: 70vw;
+    height: 25rem;
+    display: flex;
+    justify-content: space-between;
+   
+    
+}
+.certholder{
+    height: 35rem;
+    width: 25.3rem;
+    margin-top: 50px;
+    border: 1px solid var(--light-gray);
+    border-radius: 5px;
+    background-color: var(--dark-white);
+}
+
+.certimage {
+    margin-top: 5px;
+    height: 18rem;
+    width: 25rem;
+    display: flex;
+    justify-content: center;
+}
+.textholder{
+    height: 17rem;
+    width: 25rem;
+    padding-left: 20px;
+    padding-right: 20px;
+   
+}
+.certimage img{
+    height: 18rem;
+    width: 24.5rem;
+    
+    
+}
+
+
+.textholder h1{
+    font-size: 21px;
+    font-family: var(--montserrat);
+    font-weight: 500;
+   padding-top: 10px;
+   color:var(--dark-gray)  
+}
+
+.textholder h2{
+    font-family: var(--poppins);
+    font-size: 16px;
+    font-weight: 400;
+    color:var(--light-black);
+}
+
+.textholder h3{
+    margin-top: 130px;
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--blue-color);
+    font-family: var(--montserrat);
+}
+.textholder .spacer{
+    opacity: 0%;
+}
+
+
+/*SKILLS PAGE*/
+
+.skillspage{
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+}
+
+.skillspage h1{
+    font-family:var(--prosto) ;
+    font-size: 70px;
+    padding-top: 50px;
+}
+
+.skillspage h2{
+    margin-top: 50px;
+    margin-bottom: 10px;
+    font-family: var(--prosto);
+    font-weight: 400;
+    font-size: 24px;
+    color: var(--blue-color);
+}
+.skillspanel{
+    height: 20rem;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+.softskills{
+    background-color: var(--pure-white);
+    height:10rem;
+    width: 50vw;
+    border: 5px solid var(--blue-color);
+    border-radius: 28px;
+   
+}
+.textsoftskills {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);  
+    padding-left: 140px;
+}
+.textsoftskills h2{
+  text-align: left;
+   margin: 12px;
+   color: var(--black);
+   font-family: var(--montserrat);
+   font-size: 18px;
+   font-weight: 600;
+  
+}
+
+.textsoftskills h2 i{
+    color: var(--black);
+}
 
 
 
+
+/*Responsive*/
+
+@media only screen and (max-width: 768px){
+
+    *{
+        box-sizing: border-box;
+    }
+    .header {
+        visibility: hidden;
+    }
+
+    .nameholder {
+        width: 330px;
+    }
+    .nameholder h2 {
+        font-size: 12px;
+   
+    }
+
+    .nameholder .name{
+        font-size: 35px;
+        margin: 0;
+        line-height: 1;
+    }
+    .nameholder h3{
+        font-size: 12px;
+        margin-right: 2px;
+    }
+    .nameholder .shape{
+
+        width: 20rem;
+        height: 30px;
+    }
+    .nameholder .shape h4{
+        font-size: 10px;
+        letter-spacing: 2px;
+    }
+
+
+        .arrowholder h5{
+            font-size: 10px;
+        }
+
+        .aboutpage{
+            display:grid;
+            place-items: center;
+            grid-template-rows: 450px;
+            height: 250vh;
+            
+            
+        }
+        .aboutpanel {
+            width: 90%;
+            height: 100%;
+            margin-bottom: 10px;
+            padding: 0;
+            
+        }
+
+    .imgholder img{
+    
+        height: 200px;
+        width: 200px;
+        grid-row: 1;
+        border: 2px solid var(--light-gray);
+        background-color: var(--dark-white);
+        border-radius: 60px;
+        margin-top: 20px;
+        padding: 0;
+        place-items: center;
+        opacity: 95%;
+        
+    }
+
+    .imagepanel{
+        width: 100%;
+       padding: 0;
+       margin-bottom: 20px;
+       
+    }
+    .imgholder{
+        display: grid;
+        width: 20vw;
+        margin: 0;
+        place-items: center;
+        padding: 0;
+        grid-template-rows: 240px 200px;
+    }
+
+    .imgholder .textpanel {
+        height: 100%;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        grid-row: 2;
+        text-align: center;
+    }
+
+   .imgholder .textpanel h1{
+    visibility: hidden;
+      font-size: 15px;
+      font-family: var(--prosto);
+      color: var(--black);
+      padding:0;
+      margin: 0 ;
+     
+
+    }
+
+    .imgholder .textpanel h2{
+        font-weight: 600;
+        padding-top: 5px;
+        font-size: 15px;
+        text-shadow: 0px 1px 5px var(--dark-white);
+        
+    }
+    .imgholder .textpanel p{
+        color: var(--light-black);
+        font-size: 9px;
+        padding-left: 20px;
+        padding-right: 20px;
+        line-height: 17px;
+        margin-top: 5px;
+        text-align: justify;
+    }
+
+   
+
+    .textpanel .button {
+        width: 100%;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        
+    }
+    .textpanel .button a{ 
+        font-size: 8px;
+        font-weight: 400;
+        padding: 8px;
+        border: 1px solid var(--black);
+    }
+
+    .textpanel .button i {
+        font-size: 8px;
+    }
+
+    .aboutpage .infopage{
+        background-color: red;
+        height: 100vh;
+        width: 100vw;
+    }
+   
+    .infopage .infopanel{
+        display: grid;
+        place-items: center;
+        width: 100vw;
+        height: 20rem;
+
+
+       
+    }
+    .infopanel h1 {
+        font-size: 12px;
+    }
+    .infopanel h2 {
+        
+        margin-left:40px;
+        padding: 0;
+        font-size: 15px;
+    }
+
+    .infopanel h2 span{
+        text-align: center;
+        font-size: 12px;
+    }
+   
+
+    .infopanel .personal{
+        width: 90vw;
+        height: 17rem;
+    }
+
+    .infopanel .education{
+        width: 90vw;
+        height: 400px;
+        margin-top: 40px;
+    }
+    
+
+    .socialicons ul li a i{
+        margin: 10px;
+        font-size: 20px;
+    }
+
+    .socialicons ul {height: 100%;}
+    .socialicons ul li{
+        height: 100%;
+        margin: 0;}
+
+        .infopanel .title{
+            font-size: 15px;
+            margin: 0;
+            text-align: center;
+        }
+
+        .education .panel{
+            height: 500px;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .education .leftpanel{
+            margin: 0;
+            height: 340px;
+            width: 200px;
+        }
+
+        .education .rightpanel{
+            margin-left: 10px;
+            margin-top: 0;
+            height: 340px;
+            width: auto;
+
+        }
+        .education .title{
+            text-align: center;
+            
+        }
+        .education .title h1 {
+            justify-content: center;
+            margin: 0;
+        }
+        .education .leftpanel {
+            width: 100px;
+        }
+        .education .leftpanel h2{
+            font-size: 10px;
+        }
+
+       
+        .education  .rightpanel h2{
+            font-size: 9px;
+            margin-left: 0;
+        }
+        .education  .rightpanel h3{
+            font-size: 9px;
+            
+            margin-bottom: 37px;
+        }
+}
